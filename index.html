@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <link rel="shortcut icon" href="https://cdn3d.iconscout.com/3d/premium/thumb/tip-3d-icon-png-download-10075437.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/output.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body class="bg-[url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLI2H_dO_yW33Brb3tehF7ZFYGq85Ck9ZJOYn21xfYbnuWVzdcMHDLtI70I2rewNPWDk4jzgfHoIyVCIfKaQ9SJBZgJBqxJb8vl3rQwkeoBzTJcekJQdreqeEZJMlv6pnMOrAQH3RBNhFxY9yHzoR91wqeZuWrXpkeWeKyaIgTpifjqkmc7yb8AoI37p_G/s1920/gorjeta.png)] bg-no-repeat bg-cover min-h-screen flex items-center justify-center">
+
+    <section class="container mx-auto bg-[#dad3d3] w-96 rounded-md p-4">
+        
+        
+        <h1 class="text-center mb-5 font-semibold text-2xl text-[#423e3e]">Calculadora de Gorjeta</h1>
+
+        <main class="m-auto text-center bg-[#4b1f54] w-80 rounded-md p-7"> 
+
+            <div class="text-[#d6d1d1]  flex justify-between"> 
+                <h2 class="text-lg">Valor da Fatura</h2>
+                <input id="input" type="number" placeholder="$00.00"
+                       class="no-spinner text-black w-24 pl-5 rounded-md " />
+            </div>
+
+            <div class="flex justify-between mt-5">
+                <h3 class="text-[#d6d1d1]  text-lg">Tip %</h3>
+
+                <div class="flex border-2 border-pink-500 rounded-lg overflow-hidden">
+                    <button 
+                         class="px-3 py-1 font-semibold transition text-pink-400 hover:bg-pink-500 hover:text-white
+                         percent-btn "
+                         data-percent="15"
+                    >15%</button>
+                    <button 
+                        class="px-3 py-1 font-semibold border-l-2 border-pink-500 text-pink-400 hover:bg-pink-500 hover:text-white transition percent-btn"
+                        data-percent="18"
+                    >18%</button>
+                    <button 
+                        class="px-3 py-1 text-pink-400 font-semibold border-l-2 border-pink-500 hover:bg-pink-500 hover:text-white transition percent-btn" 
+                        data-percent="20"
+                        >20%</button>
+                </div>
+            </div>
+
+        </main>
+
+        <article class="m-auto border border-[#4b1f54] bg-white mt-5 w-80 rounded-md p-7">
+
+            <div class="flex justify-between">
+                <span class="text-[#9c9b9b] font-semibold text-lg ">Valor da Gorjeta</span>
+                <h1 id="resGorjeta" class="font-bold text-xl">$0.00</h1>
+            </div>
+
+            <div class="flex justify-between mt-5">
+                <span class="text-[#9c9b9b] font-semibold text-lg ">Total</span>
+                <h1 id="resTotal" class="font-bold text-xl">$0.00</h1>
+
+            </div>
+            
+        </article>
+
+        <div class="flex justify-center mt-7">
+            <button id="btn-reset" class="border w-80 h-14 bg-[#4b1f54] rounded-md tracking-[4px] font-sans text-[#dedede]  font-semibold hover:opacity-[0.9]">RESET</button>
+        </div>
+
+
+
+
+
+    </section>
+
+    
+</body>
+</html>
